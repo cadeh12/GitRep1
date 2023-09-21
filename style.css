@@ -1,0 +1,43 @@
+body {
+    color: navy;
+}
+.address {
+    margin: 2px 0;
+    text-align: center;
+    color: navy;
+    font-weight: bold;
+}
+.top-line {
+    font-size: 20px;
+}
+.mid-line {
+    font-size: 14px;
+}
+.bottom-line {
+    font-size: 16px;
+}
+.first-letter {
+    font-size: 30px;
+}
+.inc {
+    font-size: 14px;
+}
+.sub-title {
+    font-size: 10px;
+}
+.geico {
+    text-align: center;
+}
+img {
+    width: 75px;
+}
+.insurance {
+    text-align: center;
+    font-size: 10px
+}
+.section2 {
+    columns: 2 auto;
+}
+.footer {
+    font-size: 12px
+}
