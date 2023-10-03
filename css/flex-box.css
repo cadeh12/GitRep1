@@ -176,3 +176,21 @@
     padding-bottom: 40px;
     background-color: blue;
 }
+
+/* Challenge 1 */
+.head {
+    height: 75px;
+    background-color: rgb(104, 226, 33);
+    padding: 15px;
+}
+.AAN {
+    display: flex;
+    flex-direction: row;
+}
+.article {
+    width: 60%;
+}
+.aside {
+    width: 20%
+}
+.nav
