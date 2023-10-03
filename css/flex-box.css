@@ -180,7 +180,7 @@
 /* Challenge 1 */
 .head {
     height: 75px;
-    background-color: rgb(104, 226, 33);
+    background-color: chartreuse;
     padding: 15px;
 }
 .AAN {
@@ -202,5 +202,51 @@
     width: 20%;
     height: 300px;
     background-color: cadetblue;
+    padding: 15px;
+}
+.foot {
+    height: 75px;
+    background-color: chartreuse;
+    padding: 15px;
+}
+
+/* Challenge 2 */
+.chal_two {
+    display: flex;
+    flex-direction: row;
+}
+.HAFA {
+    width: 100%;
+}
+.AAF {
+    display: flex;
+    flex-direction: row;
+}
+.nav2 {
+    width: 10%;
+    padding: 15px;
+    height: 510px;
+    background-color: cadetblue;
+}
+.header {
+    height: 75px;
+    background-color: chartreuse;
+    padding: 15px;
+}
+.AF {
+    width: 80%
+}
+.article2 {
+    height: 300px;
+    padding: 15px;
+}
+.footer {
+    height: 75px;
+    background-color: chartreuse;
+    padding: 15px;
+}
+.aside2 {
+    background-color: beige;
+    width: 20%;
     padding: 15px;
 }
