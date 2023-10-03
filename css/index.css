@@ -4,16 +4,7 @@ body {
 .heading {
     text-align: center;
 }
-.berk {
-    list-style: none;
-    padding: 0.25rem;
-    width: fit-content;
-    background-color: lightcyan;
-    margin: 5px auto;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-.strawb {
+.list {
     list-style: none;
     padding: 0.25rem;
     width: fit-content;
