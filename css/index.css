@@ -3,12 +3,25 @@
     margin: 0;
     padding: 0;
 }
+.head-left {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.head-right {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 .header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(152, 222, 224);
+    justify-content: space-between;
+    background-color: #62BD69;
     margin: 0;
 }
 .logo {
@@ -27,6 +40,8 @@ a {
 hr {
     height: 2px;
     background-color: black;
+    padding: 0;
+    margin: 0;
 }
 .footer {
     padding: 10px;
@@ -34,4 +49,16 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #62BD69;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+.link:hover {
+   color: red; 
 }
