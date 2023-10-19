@@ -9,6 +9,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    margin: 0 0 0 2rem;
 }
 .head-right {
     width: 50%;
@@ -21,7 +22,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #62BD69;
+    background-color: #90EE90;
     margin: 0;
 }
 .logo {
@@ -38,7 +39,7 @@ a {
     text-decoration: none;
 }
 hr {
-    height: 2px;
+    height: .2rem;
     background-color: black;
     padding: 0;
     margin: 0;
@@ -49,16 +50,24 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #62BD69;
+    background-color: #90EE90;
     justify-content: flex-end;
     margin-top: auto;
 }
-ul {
+.footer ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style-type: none;
 }
-.link:hover {
-   color: red; 
+a:hover {
+    color: blue;
 }
+.link:hover {
+    padding: .2rem;
+    box-shadow: .25rem .25rem blue;
+}
+.icons {
+    font-size: x-large;
+}
+
