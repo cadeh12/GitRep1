@@ -41,3 +41,7 @@ img {
 li {
     padding: 10px;
 }
+.section2 {
+    display: flex;
+    flex-direction: row;
+}
