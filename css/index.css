@@ -63,11 +63,13 @@ hr {
 a:hover {
     color: blue;
 }
-.link:hover {
+.link {
     padding: .2rem;
+    border: .25rem solid transparent;
+}
+.link:hover {
     box-shadow: .25rem .25rem blue;
 }
 .icons {
     font-size: x-large;
 }
-
