@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Strawberries!</title>
-    <link rel="stylesheet" href="../css/strawberries.css">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="../css/rps.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
@@ -24,23 +25,27 @@
          </div>
         <hr>
     </header>
-    <div class="content">
-        <h1 class="heading">Strawberries!</h1>
-        <p class="standard">Strawberries are an easy to grow frut crop that will reward the home gardener with ample harvests for many years. <br>With favorable conditions, each strawberry plant should produce one quart of strawberries.</p>
-        <div class="strawbs">
-            <img class="berries" src="../img/Strawberries.jpg">
+    <main>
+        <h1>Rock, Paper, Scissors</h1>
+        <div class="choice-container">
+            <div class="user-frame">
+                <h2>User Choice</h2>
+                <img src="/img/rps4.png" class='user-img' alt="rps">
+            </div>
+            <div class="computer-frame">
+                <h2>Computer Choice</h2>
+                <img src="/img/rps4.png" class='comp-img' alt="rps">
+            </div>
         </div>
-        <p class="sub-heading">Where to Plant Stawberries</p>
-        <p class="standard">Basic considerations when locating a strawberry patch include:</p>
-        <ul class="standard">
-            <li>Full sun</li>
-            <li>Well drained, sandy loam with a soil pH from 5.8 to 6.2 is ideal</li>
-            <li>Don't plant where tomatoes, potatoes, peppers, or eggplant have been grown recently</li>
-        </ul>
-        <p class="standard">Start with a rich, organic soil. Apply a balanced fertilizer (10-10-10) at planting at the rate of one pound per 100 sq. ft. Fertilize again after renovation of June bearers or second harvest of day neutrals and everbearing types. Do not over fertilizer or you will have excessive leaf growth and poor flowering. Do not fertilizer strawberries late in the season in colder climate to prevent growth that will be damaged by frost.</p>
-        <hr>
-        <p class="sub-heading">Enjoy strawberries! They are good for you!</p>
-    </div>
+        
+        <h2>Result: <span class="result">Start Game</span></h2>
+
+        <div class="user-choices">
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
+    </main>
     <footer>
         <div class="footer">
             <ul>
@@ -55,5 +60,7 @@
             </ul>
         </div>
     </footer>
+    
+    <script src="../js/rps.js"></script>
 </body>
 </html>
