@@ -25,7 +25,11 @@ main {
     justify-content: space-between;
 }
 
-h1 {
+h1_header {
+    padding: 0;
+}
+
+h1_main {
     text-align: center;
     padding: .75em 0;
 }
