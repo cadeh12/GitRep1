@@ -88,11 +88,13 @@ function winLose(userChoice) {
 }
 function bestOf5() {
     if (userCount == 5) {
+        overall.style.fontSize = "100px"
         overall.innerText = "YOU WIN"
         rockBtn.disabled = true;
         paperBtn.disabled = true;
         scissorsBtn.disabled = true;
     } else if (compCount == 5) {
+        overall.style.fontSize = "100px"
         overall.innerText = "YOU LOSE"
         rockBtn.disabled = true;
         paperBtn.disabled = true;
