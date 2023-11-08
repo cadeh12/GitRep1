@@ -33,16 +33,19 @@ rockBtn.addEventListener('click', () => {
     // result.style.backgroundColor = "red"
     compChoice()
     winLose(rockBtn.id)
+    bestOf5()
 })
 paperBtn.addEventListener('click', () => {
     userImg.src = "../img/rps_img/" + paperBtn.id + ".png"
     compChoice()
     winLose(paperBtn.id)
+    bestOf5()
 })
 scissorsBtn.addEventListener('click', () => {
     userImg.src = "../img/rps_img/" + scissorsBtn.id +".png"
     compChoice()
     winLose(scissorsBtn.id)
+    bestOf5()
 })
 resetBtn.addEventListener('click', () => {
     window.location.reload()
@@ -83,10 +86,16 @@ function winLose(userChoice) {
         result.innerText = "Tie"
     }
 }
-function bestOf5 () {
-    if (userScore == "5") {
+function bestOf5() {
+    if (userCount == 5) {
         overall.innerText = "YOU WIN"
-    } else if (compScore = "5") {
+        rockBtn.disabled = true;
+        paperBtn.disabled = true;
+        scissorsBtn.disabled = true;
+    } else if (compCount == 5) {
         overall.innerText = "YOU LOSE"
+        rockBtn.disabled = true;
+        paperBtn.disabled = true;
+        scissorsBtn.disabled = true;
     }
 }
