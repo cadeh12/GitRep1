@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero-section {
+    background-image: url(../img/monogram_img/console-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    color: #ff8b68;
+    border: 1px solid black;
+}
+
+header {
+    position: sticky;
+    top: 1em;
+    margin: 0 auto;
+    padding: .5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1400px;
+    background-color: #1a2456;
+    color: #ff8b68;
+}
+
+.header-left {
+    width: 20%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+.header-left i {
+    font-size: clamp(2.5rem, 2vw, 3.5rem);
+}
+
+nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff8b68;
+}
+
+.hero {
+    margin: 20em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero p {
+    margin-top: 1em;
+}
