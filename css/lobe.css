@@ -8,16 +8,28 @@
 
 a {
     text-decoration: none;
-    color: #767676;
+}
+
+a:hover {
+    transform: scale(1.2);
+}
+
+nav a {
     font-weight: bold;
+    color: #767676;
 }
 
 header {
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    border: 2px solid black;
+    justify-content: space-between; */
 }
 
 .icon i {
@@ -63,8 +75,7 @@ button {
 }
 
 main {
-    border: 2px solid black;
-    padding-top: 2em;
+    padding-top: 7em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,7 +93,7 @@ main {
     flex-direction: row;
     justify-content: center;
     font-weight: bold;
-    font-size: clamp(3.5rem, 3vw, 5rem)
+    font-size: clamp(2.5rem, 3vw, 5rem)
 }
 
 .lobe {
@@ -102,10 +113,77 @@ video {
     margin-top: 2em;
     color: #333;
     font-weight: bold;
-    font-size: clamp(2rem, 3vw, 3.5rem)
+    font-size: clamp(1.25rem, 3vw, 3.5rem)
 }
 
 main button {
     margin: 3em 0;
     padding: 15px 35px;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
+}
+
+footer {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.foot-col {
+    margin: 1em auto;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.foot-col a {
+    color:#333;
+}
+
+.foot-col h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    color:#333;
+    padding-bottom: .5em;
+}
+
+.disclaimer {
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.label i {
+    font-size: 1.25rem;
+}
+
+.label h4 {
+    color: #333;
+}
+
+i {
+    color:#04ddb2;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 2rem;
 }
