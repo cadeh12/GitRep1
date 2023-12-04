@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lobe Tour | Machine Learning Made Easy</title>
     <link rel="stylesheet" href="../css/lobe.css">
+    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
@@ -13,16 +14,20 @@
             <h1>lobe</h1>
             <i class="fa-solid fa-clone"></i>
         </div>
-        <nav>
-            <a href="#">Overview</a>
-            <a href="#">Examples</a>
-            <a href="#">Tour</a>
-            <a href="#">Blog</a>
-            <a href="#">Help</a>
+        <nav class="menu">
+            <a class="menuItem" href="#">Overview</a>
+            <a class="menuItem" href="#">Examples</a>
+            <a class="menuItem" href="#">Tour</a>
+            <a class="menuItem" href="#">Blog</a>
+            <a class="menuItem" href="#">Help</a>
         </nav>
         <div class="download">
-            <button>Download</button>
+            <button class="nav-down">Download</button>
         </div>
+        <button class="hamburger">
+            <i id="menuIcon" class="fa-solid fa-bars"></i>
+            <i id="closeIcon" class="fa-solid fa-x"></i>
+        </button>
     </header>
     <main>
         <div class="hero">
@@ -78,5 +83,7 @@
             <i class="fa-brands fa-youtube"></i>
         </div>
     </footer>
+
+    <script src="../js/lobe.js"></script>
 </body>
 </html>
