@@ -1,8 +1,8 @@
-const menu = document.querySelector(".menu")
-const menuItems = document.querySelectorAll(".menuItem")
-const hamburger = document.querySelector(".hamburger")
-const closeIcon = document.getElementById('closeIcon')
-const menuIcon = document.getElementById('menuIcon')
+const menu = document.querySelector(".menu");
+const menuItems = document.querySelectorAll(".menuItem");
+const hamburger = document.querySelector(".hamburger");
+const closeIcon = document.getElementById('closeIcon');
+const menuIcon = document.getElementById('menuIcon');
 
 function toggleMenu() {
     if (menu.classList.contains("showMenu")) {
