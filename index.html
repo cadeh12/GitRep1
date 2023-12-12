@@ -27,52 +27,116 @@
         <h2>Job Application</h2>
         <p>Please complete the form below to apply for a position with us.</p>
         <form class="name">
-            <p class="form-type">Full Name</p> <p class="asterisk">*</p>
+            <div class="type">
+                <p class="form-type">Full Name</p><p class="asterisk">*</p>
+            </div>
             <div class="pair">
-                <input type="text" required class="third">
+                <input type="text" required class="third" size="20">
                 <label for="first-name">First Name</label>
             </div>
             <div class="pair">
-                <input type="text" required class="third">
+                <input type="text" required class="third" size="20">
                 <label for="middle-name">Middle Name</label>
             </div>
             <div class="pair">
-            <input type="text" required class="third">
+            <input type="text" required class="third" size="20">
             <label for="last-name">Last Name</label>                
             </div>
         </form>
         <form class="address">
-            <p class="form-type">Current Address</p>
-            <div class="pair">
-                <input type="text">
+            <div class="type">
+                <p class="form-type">Current Address</p>
+            </div>
+            <div class="street">
+                <input type="text" size="60">
                 <label for="street">Street Address</label>
             </div>
-            <div class="pair">
-                <input type="text">
+            <div class="street2">
+                <input type="text" size="60">
                 <label for="street2">Street Address Line 2</label>
             </div>
-            <div class="pair">
-                <input type="text">
+            <div class="city">
+                <input type="text" size="30">
                 <label for="city">City</label>
             </div>
-            <div class="pair">
-                <input type="text">
+            <div class="state">
+                <input type="text" size="30">
                 <label for="state">State/Province</label>
             </div>
-            <div class="pair">
-                <input type="text">
+            <div class="zip">
+                <input type="text" size="30">
                 <label for="zip">Postal/Zip Code</label>
             </div>
-            <div class="pair">
+            <div class="country">
                 <select name="country" id="country">
+                    <option value="Please Select">Please Select</option>
                     <option value="Bulgaria">Bulgaria</option>
                     <option value="Mongolia">Mongolia</option>
                     <option value="Latvia">Latvia</option>
                     <option value="Indonesia">Indonesia</option>
                     <option value="Lithuania">Lithuania</option>
                 </select>
+                <label for="country" class="country">Country</label>
             </div>
         </form>
+        <form class="email">
+            <div class="type">
+                <p class="form-type">Email Address</p><p class="asterisk">*</p>
+            </div>
+            <div class="email">
+                <input type="email" size="60" placeholder="ex: myname@example.com" required>
+            </div>
+        </form>
+        <form class="number">
+            <div class="type">
+                <p class="form-type">Phone Number</p>
+            </div>
+            <div class="area">
+                <input type="text" class="area" minlength="3" maxlength="3">
+                <label for="area">Area Code</label>
+            </div>
+            <p class="hyphen">&nbsp-&nbsp</p>
+            <div class="phone">
+                <input type="text" class="phone" minlength="7" maxlength="7">
+                <label for="phone">Phone Number</label>
+            </div>
+        </form>
+        <form class="applying">
+            <div class="type">
+                <p class="form-type">Applying for <br>Position</p><p class="asterisk">*</p>
+            </div>
+            <select name="position" id="position" class="position">
+                <option value="Please Select">Please Select</option>
+                <option value="UI/UX">UI/UX Developer</option>
+                <option value="Front">Front-End Developer</option>
+                <option value="Back">Back-End Developers</option>
+            </select>
+        </form>
+        <form class="date">
+            <div class="type">
+                <p class="form-type">Start date</p>
+            </div>
+            <div class="start">
+                <input type="date" value="2023-12-08">
+            </div>
+        </form>
+        <form class="resume">
+            <div class="type">
+                <p class="form-type">Upload Resume</p><p class="asterisk">*</p>
+            </div>
+            <input type="file">
+        </form>
+        <form class="photo">
+            <div class="type">
+                <p class="form-type">Take Photo</p>
+            </div>
+            <input type="file" accept="image/*" capture="user" placeholder="Take Photo">
+        </form>
+        <form class="accept">
+            <input name="checkbox" type="checkbox">
+            <label for="checkbox">&nbspI agree to terms & conditions</label><p class="asterisk">*</p>
+        </form>
+        <button>Submit</button>
     </main>
     <footer>
         <div class="footer">
