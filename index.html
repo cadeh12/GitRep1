@@ -16,7 +16,7 @@
             </div>
             <div class="head-right">
                 <div class="link"><h4><a href="index.html">Home</a></h4></div>
-                <div class="link"><h4><a href="html/lobe.html">Lobe Clone</a></h4></div>
+                <div class="link"><h4><a target="_blank" href="html/lobe.html">Lobe Clone</a></h4></div>
                 <div class="link"><h4><a href="html/strawberries.html">Strawberries!</a></h4></div>
                 <div class="link"><h4><a href="html/rps.html">RPS</a></h4></div>
             </div>
@@ -24,22 +24,22 @@
         <hr>
     </header>
     <main>
-        <h2>Job Application</h2>
-        <p>Please complete the form below to apply for a position with us.</p>
+        <h2 class="job">Job Application</h2>
+        <p class="complete">Please complete the form below to apply for a position with us.</p>
         <form class="name">
             <div class="type">
                 <p class="form-type">Full Name</p><p class="asterisk">*</p>
             </div>
-            <div class="pair">
-                <input type="text" required class="third" size="20">
+            <div class="first">
+                <input type="text" required class="third" size="16">
                 <label for="first-name">First Name</label>
             </div>
-            <div class="pair">
-                <input type="text" required class="third" size="20">
+            <div class="middle">
+                <input type="text" required class="third" size="16">
                 <label for="middle-name">Middle Name</label>
             </div>
-            <div class="pair">
-            <input type="text" required class="third" size="20">
+            <div class="last">
+            <input type="text" required class="third" size="18">
             <label for="last-name">Last Name</label>                
             </div>
         </form>
@@ -56,20 +56,20 @@
                 <label for="street2">Street Address Line 2</label>
             </div>
             <div class="city">
-                <input type="text" size="30">
+                <input type="text" size="27">
                 <label for="city">City</label>
             </div>
             <div class="state">
-                <input type="text" size="30">
+                <input type="text" size="27">
                 <label for="state">State/Province</label>
             </div>
             <div class="zip">
-                <input type="text" size="30">
+                <input type="text" size="27">
                 <label for="zip">Postal/Zip Code</label>
             </div>
             <div class="country">
                 <select name="country" id="country">
-                    <option value="Please Select">Please Select</option>
+                    <option value="">Please Select</option>
                     <option value="Bulgaria">Bulgaria</option>
                     <option value="Mongolia">Mongolia</option>
                     <option value="Latvia">Latvia</option>
@@ -106,7 +106,7 @@
                 <p class="form-type">Applying for <br>Position</p><p class="asterisk">*</p>
             </div>
             <select name="position" id="position" class="position">
-                <option value="Please Select">Please Select</option>
+                <option value="">Please Select</option>
                 <option value="UI/UX">UI/UX Developer</option>
                 <option value="Front">Front-End Developer</option>
                 <option value="Back">Back-End Developers</option>
@@ -130,11 +130,11 @@
             <div class="type">
                 <p class="form-type">Take Photo</p>
             </div>
-            <input type="file" accept="image/*" capture="user" placeholder="Take Photo">
+            <input class="take" type="button" value="Take Photo">
         </form>
         <form class="accept">
             <input name="checkbox" type="checkbox">
-            <label for="checkbox">&nbspI agree to terms & conditions</label><p class="asterisk">*</p>
+            <label for="checkbox">&nbspI agree to <span class="terms">terms & conditions</span>.</label><p class="asterisk">*</p>
         </form>
         <button>Submit</button>
     </main>
