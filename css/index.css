@@ -47,7 +47,52 @@ a {
 }
 
 main {
-    height: 120vh;
+    height: 200vh;
+}
+
+.FAQ-card {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: #F9EEFF;
+    border: 2px solid black;
+}
+
+.FAQback {
+    height: 20vh;
+    width: 40vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    top: -8vh;
+    left: 2.5vw;
+    border: 2px solid black;
+}
+
+.star {
+    width: 8%;
+    height: auto;
+    display: inline;
+    margin: .5rem 1rem;
+}
+
+.FAQ-title {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 1vh;
+    left: 1vw;
+    font-size: 1.2rem;
 }
 
 .job {
