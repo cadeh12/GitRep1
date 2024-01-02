@@ -58,7 +58,6 @@ main {
     margin: 0 auto;
     margin-top: 1em;
     background-color: #F9EEFF;
-    border: 2px solid black;
 }
 
 .FAQback {
@@ -76,7 +75,6 @@ main {
     position: relative;
     top: -8vh;
     left: 2.5vw;
-    border: 2px solid black;
 }
 
 .star {
@@ -93,6 +91,34 @@ main {
     top: 1vh;
     left: 1vw;
     font-size: 1.2rem;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.QnA {
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+.answer {
+    display: none;
+}
+
+.plus {
+    display: inline;
+    height: 2.5rem;
+}
+
+.minus {
+    display: none;
+    height: 2.5rem;
 }
 
 .job {
