@@ -1,3 +1,9 @@
+/* CSS HEX
+--chamoisee: #a7754dff;
+--celadon: #b6cb9eff;
+--cambridge-blue: #92b4a7ff;
+--charcoal: #474954ff;
+--tangerine: #f28f3bff; */
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -25,8 +31,51 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #90EE90;
+    background-color: #b6cb9eff;
     margin: 0;
+}
+
+.hamburger {
+    display: none;
+    background-color: #b6cb9eff;
+    border: none;
+    font-size: 1.5rem;
+    color: #474954ff;
+    position: relative;
+    right: 5;
+}
+
+#closeIcon {
+    display: none;
+    color: #f28f3bff;
+}
+
+@media screen and (max-width: 600px) {
+    .hamburger {
+        display: inline-block;
+    }
+    .head-right {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.5s;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 0;
+        /* bottom: 5; */
+        left: 0;
+        z-index: 99;
+        width: 75%;
+        gap: 1em;
+        font-size: 1.2rem;
+        background: #fff;
+        color: #333;
+        list-style: none;
+        padding-top: 4em;
+      }
+      .showMenu {
+        transform: translateY(0);
+      }
 }
 
 .logo {
@@ -42,7 +91,7 @@
 }
 
 a {
-    color: black;
+    color: #474954ff;
     text-decoration: none;
 }
 
@@ -264,9 +313,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #90EE90;
+    background-color: #b6cb9eff;
     justify-content: flex-end;
     margin-top: auto;
+    color: #474954ff;
 }
 
 .footer ul {
@@ -277,7 +327,7 @@ footer {
 }
 
 a:hover {
-    color: blue;
+    color: #92b4a7ff;
 }
 
 .link {
@@ -286,7 +336,7 @@ a:hover {
 }
 
 .link:hover {
-    box-shadow: .25rem .25rem blue;
+    box-shadow: .25rem .25rem #92b4a7ff;
 }
 
 .icons {
