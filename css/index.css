@@ -61,20 +61,31 @@ main {
 }
 
 .FAQback {
-    height: 20vh;
-    width: 40vw;
+    height: 25%;
+    width: 100%;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    width: 35vw;
-    height: 60vh;
+    width: 87.5%;
+    height: 75%;
     background-color: white;
     border-radius: 10px;
     position: relative;
     top: -8vh;
     left: 2.5vw;
+}
+
+@media screen and (max-width: 450px) {
+    .FAQ-card {
+        width: 80vw;
+        height: 120vh;
+    }
+    .card {
+        top: -20vh;
+        left: 5vw;
+    }
 }
 
 .star {
@@ -109,6 +120,8 @@ main {
 
 .answer {
     display: none;
+    margin-top: 1em;
+    color:rgb(126, 126, 126);
 }
 
 .plus {

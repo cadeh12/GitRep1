@@ -1,20 +1,20 @@
-const plus1 = document.getElementById('plus1')
-const plus2 = document.getElementById('plus2')
-const plus3 = document.getElementById('plus3')
-const plus4 = document.getElementById('plus4')
-const minus1 = document.getElementById('minus1')
-const minus2 = document.getElementById('minus2')
-const minus3 = document.getElementById('minus3')
-const minus4 = document.getElementById('minus4')
-const A1 = document.getElementById('A1')
-const A2 = document.getElementById('A2')
-const A3 = document.getElementById('A3')
-const A4 = document.getElementById('A4')
+const plusList = document.querySelectorAll('.plus')
+const minusList = document.querySelectorAll('.minus')
+const answerList = document.querySelectorAll('.answer')
 
-function toggleQnA1() {
-    plus1.style.display = "none";
-    minus1.style.display = "block";
-    A1.style.display = "block";
-}
-
-plus1.addEventListener("click", toggleQnA1)
+plusList.forEach(plus => {
+    plus.addEventListener('click', () => {
+        let index = parseInt(plus.id)
+        plusList[index].style.display = 'none'
+        minusList[index].style.display = 'block'
+        answerList[index].style.display = 'block'
+    })
+});
+minusList.forEach(minus => {
+    minus.addEventListener('click', () => {
+        let index = parseInt(minus.id)
+        plusList[index].style.display = 'block'
+        minusList[index].style.display = 'none'
+        answerList[index].style.display = 'none'
+    })
+});
