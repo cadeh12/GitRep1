@@ -17,14 +17,3 @@ function toggleMenu() {
 }
 
 hamburger.addEventListener("click", toggleMenu)
-
-// menuIcon.addEventListener("click", () => {
-//     menu.style.display = "block"
-//     menuIcon.style.display = "none"
-//     closeIcon.style.display = "block"
-// })
-// closeIcon.addEventListener("click", () => {
-//     menu.style.display = "none"
-//     closeIcon.style.display = "none"
-//     menuIcon.style.display = "block"
-// })
