@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    font-size: 1.2rem;
 }
 
 .header {
@@ -35,6 +36,10 @@
     margin: 0;
 }
 
+.link {
+    width: fit-content;
+}
+
 .hamburger {
     display: none;
     background-color: #b6cb9eff;
@@ -42,7 +47,7 @@
     font-size: 1.5rem;
     color: #474954ff;
     position: relative;
-    right: 5;
+    right: 0;
 }
 
 #closeIcon {
@@ -50,32 +55,30 @@
     color: #f28f3bff;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1020px) {
     .hamburger {
-        display: inline-block;
+        display: block;
+        margin-right: 10%;
     }
     .head-right {
-        position: fixed;
-        transform: translateY(-100%);
-        transition: transform 0.5s;
+        position: absolute;
+        top: 5.2em;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        top: 0;
-        /* bottom: 5; */
-        left: 0;
-        z-index: 99;
-        width: 75%;
+        width: 100%;
         gap: 1em;
         font-size: 1.2rem;
         background: #fff;
         color: #333;
         list-style: none;
-        padding-top: 4em;
+        display: none;
       }
-      .showMenu {
-        transform: translateY(0);
-      }
+    .showMenu {
+        display: block;
+    }
+    .link {
+        margin: 0 auto;
+    }
 }
 
 .logo {
@@ -96,6 +99,7 @@ a {
 }
 
 main {
+    margin-top: 12em;
     height: 200vh;
 }
 
@@ -327,7 +331,7 @@ footer {
 }
 
 a:hover {
-    color: #92b4a7ff;
+    color: #f28f3bff;
 }
 
 .link {
@@ -336,7 +340,7 @@ a:hover {
 }
 
 .link:hover {
-    box-shadow: .25rem .25rem #92b4a7ff;
+    box-shadow: .25rem .25rem #f28f3bff;
 }
 
 .icons {

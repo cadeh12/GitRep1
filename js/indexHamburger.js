@@ -9,7 +9,6 @@ function toggleMenu() {
         menu.classList.remove("showMenu");
         closeIcon.style.display = "none";
         menuIcon.style.display = "block";
-        
     } else {
         menu.classList.add("showMenu");
         closeIcon.style.display = "block";
@@ -19,8 +18,13 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu)
 
-menuItems.forEach(
-    function(menuItem) {
-        menuItem.addEventListener("click", toggleMenu)
-    }
-)
+// menuIcon.addEventListener("click", () => {
+//     menu.style.display = "block"
+//     menuIcon.style.display = "none"
+//     closeIcon.style.display = "block"
+// })
+// closeIcon.addEventListener("click", () => {
+//     menu.style.display = "none"
+//     closeIcon.style.display = "none"
+//     menuIcon.style.display = "block"
+// })
