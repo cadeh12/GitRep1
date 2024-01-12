@@ -55,6 +55,19 @@
     color: #f28f3bff;
 }
 
+a:hover {
+    color: #f28f3bff;
+}
+
+.link {
+    padding: .2rem;
+    border: .25rem solid transparent;
+}
+
+.link:hover {
+    box-shadow: .25rem .25rem #474954ff;
+}
+
 @media screen and (max-width: 1020px) {
     .hamburger {
         display: block;
@@ -73,11 +86,16 @@
         list-style: none;
         display: none;
       }
-    .showMenu {
+    .displayMenu {
         display: block;
     }
     .link {
         margin: 0 auto;
+        text-align: center;
+        width: 100%;
+    }
+    a:hover {
+        color: #92b4a7ff;
     }
 }
 
@@ -102,6 +120,34 @@ main {
     margin-top: 12em;
     height: 200vh;
 }
+
+.cards4 {
+    font-family: "Poppins";
+}
+
+.spiel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.rel {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.pow {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.blurb {
+    width: 30%;
+    text-align: center;
+}
+
+
 
 .FAQ-card {
     display: flex;
@@ -328,19 +374,6 @@ footer {
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-}
-
-a:hover {
-    color: #f28f3bff;
-}
-
-.link {
-    padding: .2rem;
-    border: .25rem solid transparent;
-}
-
-.link:hover {
-    box-shadow: .25rem .25rem #f28f3bff;
 }
 
 .icons {
