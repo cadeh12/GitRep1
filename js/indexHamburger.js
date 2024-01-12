@@ -6,7 +6,7 @@ const menuIcon = document.getElementById('menuIcon');
 
 function toggleMenu() {
     if (menu.classList.contains("displayMenu")) {
-        menu.classList.remove("showMenu");
+        menu.classList.remove("displayMenu");
         closeIcon.style.display = "none";
         menuIcon.style.display = "block";
     } else {
