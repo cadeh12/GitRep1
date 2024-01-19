@@ -20,11 +20,12 @@
 }
 
 .head-right {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 1.2rem;
+    margin: 0 auto;
 }
 
 .header {
@@ -118,7 +119,10 @@ a {
 
 main {
     margin-top: 12em;
-    height: 200vh;
+}
+
+section {
+    margin: 25vh auto;
 }
 
 .cards4 {
@@ -129,7 +133,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid black;
 }
 
 .rel {
@@ -139,15 +142,121 @@ main {
 
 .pow {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 600;
+    color: #4c4e61;
 }
 
 .blurb {
     width: 30%;
     text-align: center;
+    margin-top: 1em;
+    color: #a3a5ae;
 }
 
+.cards {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
 
+.card4 {
+    width: 18rem;
+    height: 12rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 20px #cccccc;
+}
+
+.card-title {
+    position: relative;
+    top: 1rem;
+    left: 1.5rem;
+    font-weight: 700;
+    color: #4c4e61;
+}
+
+.descript {
+    position: relative;
+    width: 80%;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 0.8rem;
+    color: #a3a5ae;
+}
+
+.card-icon {
+    width: 20%;
+    position: relative;
+    top: 3.5rem;
+    left: 12.5rem;
+}
+
+.color-line {
+    width: 100%;
+    height: 2%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#cyan {
+    background-color: #45d3d3;
+}
+#red {
+    background-color: #ea5353;
+}
+#orange {
+    background-color: #fcaf4a;
+}
+#blue {
+    background-color: #549ef2;
+}
+
+@media screen and (max-width: 450px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .card4 {
+        width: 90vw;
+        max-width: 16rem;
+        height: 25vh;
+        max-height: 11rem;
+        margin-bottom: 0;
+    }
+    .buildkar {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .blurb {
+        width: 70%;
+    }
+    .card-title {
+        position: relative;
+        left: 1rem;
+    }
+    .descript {
+        position: relative;
+        left: 1rem;
+    }
+    .card-icon {
+        position: relative;
+        top: 3rem;
+        left: 11.5rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 .FAQ-card {
     display: flex;
@@ -365,7 +474,6 @@ footer {
     align-items: center;
     background-color: #b6cb9eff;
     justify-content: flex-end;
-    margin-top: auto;
     color: #474954ff;
 }
 
