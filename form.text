@@ -1,0 +1,226 @@
+/* .job {
+    width: 50%;
+    margin: 0 auto;
+    color:dimgray;
+}
+
+.complete {
+    width: 50%;
+    margin: 0 auto;
+    color:dimgray;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-type {
+    display: inline;
+    font-weight: bold;
+    color:dimgray;
+}
+
+.type {
+    width: 135px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    width: 70%;
+    margin: 3em auto;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    color:dimgray;
+    font-weight:600;
+}
+
+.asterisk {
+    display: inline;
+    color: red;
+}
+
+.first {
+    margin-right: 4px;
+}
+
+.middle {
+    margin-right: 4px;
+}
+
+.address {
+    flex-wrap: wrap;
+}
+
+.address select {
+    width: 200px;
+}
+
+.street2 {
+    margin-left: 135px;
+}
+
+.city {
+    margin-left: 135px;
+    margin-right: 4px;
+}
+
+.zip {
+    margin-left: 135px;
+    margin-right: 4px;
+}
+
+.country {
+    width: 30px;
+}
+
+.applying select {
+    height: 25px;
+    width: 200px;
+}
+
+form div {
+    padding-bottom: 0.5em;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 4px;
+}
+
+.accept label {
+    font-size: 16px;
+    font-weight: none;
+}
+
+.take {
+    width: 180px;
+    height: 40px;
+    border-color: lightgrey;
+    border-radius: 5px;
+    color: dimgray;
+    font-weight: 600;
+}
+
+.terms {
+    color:rgb(46, 223, 223);
+} */
+
+        <section class="Application">
+        <h2 class="job">Job Application</h2>
+        <p class="complete">Please complete the form below to apply for a position with us.</p>
+        <form class="name">
+            <div class="type">
+                <p class="form-type">Full Name</p><p class="asterisk">*</p>
+            </div>
+            <div class="first">
+                <input type="text" required class="third" size="16">
+                <label for="first-name">First Name</label>
+            </div>
+            <div class="middle">
+                <input type="text" required class="third" size="16">
+                <label for="middle-name">Middle Name</label>
+            </div>
+            <div class="last">
+            <input type="text" required class="third" size="18">
+            <label for="last-name">Last Name</label>                
+            </div>
+        </form>
+        <form class="address">
+            <div class="type">
+                <p class="form-type">Current Address</p>
+            </div>
+            <div class="street">
+                <input type="text" size="60">
+                <label for="street">Street Address</label>
+            </div>
+            <div class="street2">
+                <input type="text" size="60">
+                <label for="street2">Street Address Line 2</label>
+            </div>
+            <div class="city">
+                <input type="text" size="27">
+                <label for="city">City</label>
+            </div>
+            <div class="state">
+                <input type="text" size="27">
+                <label for="state">State/Province</label>
+            </div>
+            <div class="zip">
+                <input type="text" size="27">
+                <label for="zip">Postal/Zip Code</label>
+            </div>
+            <div class="country">
+                <select name="country" id="country">
+                    <option value="">Please Select</option>
+                    <option value="Bulgaria">Bulgaria</option>
+                    <option value="Mongolia">Mongolia</option>
+                    <option value="Latvia">Latvia</option>
+                    <option value="Indonesia">Indonesia</option>
+                    <option value="Lithuania">Lithuania</option>
+                </select>
+                <label for="country" class="country">Country</label>
+            </div>
+        </form>
+        <form class="email">
+            <div class="type">
+                <p class="form-type">Email Address</p><p class="asterisk">*</p>
+            </div>
+            <div class="email">
+                <input type="email" size="60" placeholder="ex: myname@example.com" required>
+            </div>
+        </form>
+        <form class="number">
+            <div class="type">
+                <p class="form-type">Phone Number</p>
+            </div>
+            <div class="area">
+                <input type="text" class="area" minlength="3" maxlength="3">
+                <label for="area">Area Code</label>
+            </div>
+            <p class="hyphen">&nbsp-&nbsp</p>
+            <div class="phone">
+                <input type="text" class="phone" minlength="7" maxlength="7">
+                <label for="phone">Phone Number</label>
+            </div>
+        </form>
+        <form class="applying">
+            <div class="type">
+                <p class="form-type">Applying for <br>Position</p><p class="asterisk">*</p>
+            </div>
+            <select name="position" id="position" class="position">
+                <option value="">Please Select</option>
+                <option value="UI/UX">UI/UX Developer</option>
+                <option value="Front">Front-End Developer</option>
+                <option value="Back">Back-End Developers</option>
+            </select>
+        </form>
+        <form class="date">
+            <div class="type">
+                <p class="form-type">Start date</p>
+            </div>
+            <div class="start">
+                <input type="date" value="2023-12-08">
+            </div>
+        </form>
+        <form class="resume">
+            <div class="type">
+                <p class="form-type">Upload Resume</p><p class="asterisk">*</p>
+            </div>
+            <input type="file">
+        </form>
+        <form class="photo">
+            <div class="type">
+                <p class="form-type">Take Photo</p>
+            </div>
+            <input class="take" type="button" value="Take Photo">
+        </form>
+        <form class="accept">
+            <input name="checkbox" type="checkbox">
+            <label for="checkbox">&nbspI agree to <a href="#" class="terms">terms & conditions</a>.</label><p class="asterisk">*</p>
+        </form>
+        <button>Submit</button>
+        </section>
