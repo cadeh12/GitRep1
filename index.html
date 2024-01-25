@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -103,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section class="form-area">
+        <section class="form-area" style="background-image: url('img/backgroundform.png');">
             <div class="form-descript">
                 <p class="learn">Learn to code by watching others</p>
                 <p class="form-blurb">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
@@ -112,14 +112,14 @@
                 <div class="try">
                     <p class="tryit"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
                 </div>
-                <div class="form">
-                    <input type="text" class="form-line" placeholder="First Name">
-                    <input type="text" class="form-line" placeholder="Last Name">
-                    <input type="email" class="form-line" placeholder="Email Address">
-                    <input type="text" class="form-line" placeholder="Password">
+                <form class="form">
+                    <input type="text" class="form-line" id="first" placeholder="First Name" required>
+                    <input type="text" class="form-line" id="last" placeholder="Last Name" required>
+                    <input type="email" class="form-line" id="email" placeholder="Email Address" required>
+                    <input type="text" class="form-line" id="password" placeholder="Password" required>
                     <button class="claim">CLAIM YOUR FREE TRIAL</button>
                     <p class="disclaim">By clicking this button, you are agreeing to our <span class="red">Terms and Services</span></p>
-                </div>
+                </form>
             </div>
         </section>
     </main>

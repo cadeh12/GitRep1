@@ -51,6 +51,10 @@
     right: 0;
 }
 
+.hamburger:hover {
+    cursor: pointer;
+}
+
 #closeIcon {
     display: none;
     color: #f28f3bff;
@@ -337,9 +341,17 @@ section {
     height: 2.5rem;
 }
 
+.plus:hover {
+    cursor: pointer;
+}
+
 .minus {
     display: none;
     height: 2.5rem;
+}
+
+.minus:hover {
+    cursor: pointer;
 }
 
 :root {
@@ -351,8 +363,8 @@ section {
 }
 
 .form-area {
-    background-image: url(form-back.png);
     background-color: var(--primary-red);
+    background-image: url(img/backgroundform.png);
     padding: 10%;
     display: flex;
     flex-direction: row;
@@ -420,6 +432,10 @@ input[class="form-line"] {
     border-radius: 5px;
 }
 
+.claim:hover {
+    cursor: pointer;
+}
+
 .disclaim {
     color: var(--primary-grayishblue);
     font-size: 0.6rem;
@@ -431,7 +447,11 @@ input[class="form-line"] {
     font-weight: 700;
 }
 
-@media screen and (max-width: 375px) {
+.red:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
     .form-area {
         display: flex;
         flex-direction: column;
@@ -439,6 +459,7 @@ input[class="form-line"] {
     }
     .form-descript {
         width: 90%;
+        text-align: center;
     }
     .form-column {
         width: 90%;
