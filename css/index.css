@@ -452,7 +452,7 @@ input[class="form-line"] {
 
 .red:hover {
     cursor: pointer;
-    color:hsl(0, 100%, 60%)
+    color:hsl(0, 100%, 60%);
 }
 
 @media screen and (max-width: 500px) {
