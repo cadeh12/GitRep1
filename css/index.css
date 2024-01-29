@@ -423,6 +423,7 @@ section {
 input[class="form-line"] {
     padding: 3%;
     font-weight: 700;
+    caret-color: var(--primary-blue);
 }
 
 .claim {
