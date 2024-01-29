@@ -99,7 +99,7 @@ a:hover {
         text-align: center;
         width: 100%;
     }
-    a:hover {
+    .head-right a:hover {
         color: #92b4a7ff;
     }
 }
@@ -126,7 +126,7 @@ main {
 }
 
 section {
-    margin: 25vh auto;
+    margin: 10vh auto;
 }
 
 .cards4 {
@@ -403,6 +403,7 @@ section {
     margin-bottom: 5%;
     font-size: 0.8rem;
     text-align: center;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 .bold {
@@ -416,6 +417,7 @@ section {
     padding: 10% 10%;
     border-radius: 10px;
     gap: 1rem;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 input[class="form-line"] {
