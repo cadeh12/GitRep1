@@ -43,22 +43,22 @@
     margin-bottom: 2em;
     }
     
-.TL {
+.top-left {
     background-color: red;
     transition: all 1s ease-in-out, background-color 0s, font-size 0s;
     }
 
-.BL {
+.bottom-left {
     background-color: blue;
     transition: all 1s ease-in-out, background-color 0s, font-size 0s;
 }
 
-.TR {
+.top-right {
     background-color: yellow;
     transition: all 1s ease-in-out, background-color 0s, font-size 0s;
 }
 
-.BR {
+.bottom-right {
     background-color: green;
     transition: all 1s ease-in-out, background-color 0s, font-size 0s;
 }
@@ -71,22 +71,21 @@
     width: 200px;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
 }
 
-.ex4:hover .TL {
+.ex4:hover .top-left {
     transform: translateX(-100px) rotateZ(90deg);
 }
 
-.ex4:hover .BL {
+.ex4:hover .bottom-left {
     transform: translateX(-100px) rotateZ(-90deg);
 }
 
-.ex4:hover .TR {
+.ex4:hover .top-right {
     transform: translateX(100px) rotateZ(-90deg);
 }
 
-.ex4:hover .BR {
+.ex4:hover .bottom-right {
     transform: translateX(100px) rotateZ(90deg);
 }
 
