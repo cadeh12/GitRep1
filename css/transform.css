@@ -4,6 +4,10 @@
     padding: 0;
     }
     
+main {
+    height: 150vh;
+}
+
 .box {
     width: 100px;
     height: 100px;
@@ -71,6 +75,7 @@
     width: 200px;
     margin: 0 auto;
     display: flex;
+    margin-bottom: 5em;
 }
 
 .ex4:hover .top-left {
@@ -96,3 +101,152 @@
     left: 110px;
     z-index: -1;
 }
+
+.color-fan {
+    height: 400px;
+    background-color:blueviolet;
+    padding-top: 5em;
+}
+
+.fan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.color {
+    height: 200px;
+    width: 60px;
+    position: absolute;
+    border-radius: 5px;
+    top: 0px;
+    transform-origin: 50% 175px;
+    border-top: 2px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(0, 0 0, 0.25);
+    border-left: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 165px;
+}
+
+.blue {
+    background-color: blue;
+    animation: blue-pulse 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+@keyframes blue-pulse {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25%,
+    75% {
+        transform: rotateZ(-70deg)
+    }
+    90%,
+    10% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.purple {
+    background-color: purple;
+    animation: purple-pulse 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+@keyframes purple-pulse {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25%,
+    75% {
+        transform: rotateZ(-45deg)
+    }
+    90%,
+    10% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.green {
+    background-color: green;
+    animation: green-pulse 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+@keyframes green-pulse {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25%,
+    75% {
+        transform: rotateZ(-15deg)
+    }
+    90%,
+    10% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.yellow {
+    background-color: yellow;
+    animation: yellow-pulse 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+@keyframes yellow-pulse {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25%,
+    75% {
+        transform: rotateZ(15deg)
+    }
+    90%,
+    10% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.orange {
+    background-color: orange;
+    animation: orange-pulse 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+@keyframes orange-pulse {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25%,
+    75% {
+        transform: rotateZ(45deg)
+    }
+    90%,
+    10% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.red {
+    background-color: red;
+    animation: red-pulse 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+@keyframes red-pulse {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25%,
+    75% {
+        transform: rotateZ(70deg)
+    }
+    90%,
+    10% {
+        transform: rotateZ(0deg);
+    }
+}
+
