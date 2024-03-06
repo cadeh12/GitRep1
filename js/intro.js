@@ -34,3 +34,22 @@ function toggleCompany() {
         companyArrowUp.style.display = "inline-block";
     }
 }
+
+const sidebar = document.querySelector('.links')
+const openSidebar = document.querySelector('#hamburger')
+const closeSidebar = document.querySelector('#close-icon')
+
+openSidebar.addEventListener('click', toggleSidebarOpen)
+closeSidebar.addEventListener('click', toggleSidebarClose)
+
+function toggleSidebarOpen() {
+    openSidebar.style.display = "none";
+    sidebar.classList.add("displaySidebar");
+    closeSidebar.style.display = "block";
+}
+
+function toggleSidebarClose() {
+    openSidebar.style.display = "block";
+    sidebar.classList.remove("displaySidebar");
+    closeSidebar.style.display = "none";
+}
