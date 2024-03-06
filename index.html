@@ -1,143 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="head-left">
-                <div class="logo"><a href="index.html"><img class="phagocytosis" src="img/phagocytosis.png"></a></div>
-                <div class="title"><a href="index.html"><h1>Cade Hemond</h1></a></div>
-            </div>
-            <div class="head-right">
-                <div class="link"><h4><a href="index.html">Home</a></h4></div>
-                <div class="link"><h4><a target="_blank" href="html/lobe.html">Lobe Clone</a></h4></div>
-                <div class="link"><h4><a target="_blank" href="html/transform.html">Transform & Animation</a></h4></div>
-                <div class="link"><h4><a target="_blank" href="html/intro.html">Intro Section</a></h4></div>
-            </div>
-            <button class="hamburger">
-                <i id="menuIcon" class="fa-solid fa-bars"></i>
-                <i id="closeIcon" class="fa-solid fa-x"></i>
-            </button>
-         </div>
-    </header>
-    <main>
-        <section class="cards4">
-            <div class="spiel">
-                <p class="rel">Reliable, efficient delivery</p>
-                <p class="pow">Powered by Technology</p>
-                <p class="blurb">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
-            </div>
-            <div class="cards">
-                <div class="card4">
-                    <div class="color-line" id="cyan"></div>
-                    <p class="card-title">Supervisor</p>
-                    <p class="descript">Monitors activity to identify project roadblocks</p>
-                    <img src="img/4cards/icon-supervisor.jpg" alt="magnifying glass with eye in lens" class="card-icon">
-                </div>
-                <div class="buildkar">
-                    <div class="card4">
-                        <div class="color-line" id="red"></div>
-                        <p class="card-title">Team Builder</p>
-                        <p class="descript">Scans our talent network to create the optimal team for your project</p>
-                        <img src="img/4cards/icon-team-builder.jpg" alt="house overlayed on website page" class="card-icon">
-                    </div>
-                    <div class="card4">
-                        <div class="color-line" id="orange"></div>
-                        <p class="card-title">Karma</p>
-                        <p class="descript">Regularly evaluates our talent to ensure quality</p>
-                        <img src="img/4cards/icon-karma.jpg" alt="light bulb" class="card-icon">
-                    </div>
-                </div>
-                <div class="card4">
-                    <div class="color-line" id="blue"></div>
-                    <p class="card-title">Calculator</p>
-                    <p class="descript">Uses data from past projects to provide better delivery estimates</p>
-                    <img src="img/4cards/icon-calculator.jpg" alt="desktop with graph outlines" class="card-icon">
-                </div>
-            </div>
-        </section>
-        <section class="FAQ-card">
-            <img class="FAQback" src="img/FAQ/FAQback.jpg" alt="purpleback">
-            <div class="card">
-                <div class="FAQ-title">
-                    <img class="star" src="img/FAQ/icon-star.jpg" alt="star icon">
-                    <h2>FAQs</h2>
-                </div>
-                <div class="QnA">
-                    <div class="question">
-                        <p>What is Frontend Mentor, and how will it help me?</p>
-                        <img id="0" class="plus" src="img/FAQ/icon-plus.jpg" alt="plus symbol">
-                        <img id="0" src="img/FAQ/icon-minus.jpg" alt="minus symbol" class="minus">
-                    </div>
-                    <p id="0" class="answer">Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building. </p>
-                </div>
-                <div class="QnA">
-                    <div class="question">
-                        <p>Is Frontend Mentor free?</p>
-                        <img id="1" class="plus" src="img/FAQ/icon-plus.jpg" alt="plus symbol">
-                        <img id="1" src="img/FAQ/icon-minus.jpg" alt="minus symbol" class="minus">
-                    </div>
-                    <p id="1" class="answer">Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels. </p>
-                </div>
-                <div class="QnA">
-                    <div class="question">
-                        <p>Can I use Frontend Mentor projects in my portfolio?</p>
-                        <img id="2" class="plus" src="img/FAQ/icon-plus.jpg" alt="plus symbol">
-                        <img id="2" src="img/FAQ/icon-minus.jpg" alt="minus symbol" class="minus">
-                    </div>
-                    <p id="2" class="answer">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!</p>
-                </div>
-                <div class="QnA">
-                    <div class="question">
-                        <p>How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
-                        <img id="3" class="plus" src="img/FAQ/icon-plus.jpg" alt="plus symbol">
-                        <img id="3" src="img/FAQ/icon-minus.jpg" alt="minus symbol" class="minus">
-                    </div>
-                    <p id="3" class="answer">The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
-                </div>
-            </div>
-        </section>
-        <section class="form-area" style="background-image: url('img/backgroundform.png');">
-            <div class="form-descript">
-                <p class="learn">Learn to code by watching others</p>
-                <p class="form-blurb">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
-            </div>
-            <div class="form-column">
-                <div class="try">
-                    <p class="tryit"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
-                </div>
-                <form class="form">
-                    <input type="text" class="form-line" id="first" placeholder="First Name" required>
-                    <input type="text" class="form-line" id="last" placeholder="Last Name" required>
-                    <input type="email" class="form-line" id="email" placeholder="Email Address" required>
-                    <input type="text" class="form-line" id="password" placeholder="Password" required>
-                    <button class="claim">CLAIM YOUR FREE TRIAL</button>
-                    <p class="disclaim">By clicking this button, you are agreeing to our <a href="#" class="red">Terms and Services</a></p>
-                </form>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <ul>
-                <li><i class="fa-solid fa-location-dot"></i> 284 Cumberland Ave, Portland ME 04101</li>
-                <li><i class="fa-solid fa-envelope"></i> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hemonc@portlandschools.org" target="_blank"> hemonc@portlandschools.org</a></li>
-                <li><i class="fa-solid fa-phone"></i> 207.232.6359</li>
-                <li class="icons"><a href="https://github.com/cadeh12" target="_blank"><i class="fa-brands fa-github"></i></a> 
-                    <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
-                    <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-                </li>
-                <li>Caden Hemond <i class="fa-regular fa-copyright"></i> 2023</li>
-            </ul>
+  <header>
+    <div class="header">
+      <div class="head-left">
+        <div class="logo"><a href="index.html"><img class="phagocytosis" src="img/phagocytosis.png"></a></div>
+        <div class="title"><a href="index.html">
+            <h1>Cade Hemond</h1>
+          </a></div>
+      </div>
+      <div class="head-right">
+        <div class="link">
+          <h4><a href="index.html">Home</a></h4>
         </div>
-    </footer>
-    <script src="js/FAQaccordion.js"></script>
-    <script src="js/indexHamburger.js"></script>
+        <div class="link">
+          <h4><a target="_blank" href="html/lobe.html">Lobe Clone</a></h4>
+        </div>
+        <div class="link">
+          <h4><a target="_blank" href="html/transform.html">Transform & Animation</a></h4>
+        </div>
+        <div class="link">
+          <h4><a target="_blank" href="html/intro.html">Intro Section</a></h4>
+        </div>
+      </div>
+      <button class="hamburger">
+        <i id="menuIcon" class="fa-solid fa-bars"></i>
+        <i id="closeIcon" class="fa-solid fa-x"></i>
+      </button>
+    </div>
+  </header>
+  <div>
+    <p style="margin: 2rem 10rem">Price: <span class="output">0</span></p>
+  </div>
+  <main>
+    <section class="cards4">
+      <div class="spiel">
+        <p class="rel">Reliable, efficient delivery</p>
+        <p class="pow">Powered by Technology</p>
+        <p class="blurb">Our Artificial Intelligence powered tools use millions of project data points to ensure that
+          your project is successful</p>
+      </div>
+      <div class="cards">
+        <div class="card4">
+          <div class="color-line" id="cyan"></div>
+          <p class="card-title">Supervisor</p>
+          <p class="descript">Monitors activity to identify project roadblocks</p>
+          <img src="img/4cards/icon-supervisor.jpg" alt="magnifying glass with eye in lens" class="card-icon">
+        </div>
+        <div class="buildkar">
+          <div class="card4">
+            <div class="color-line" id="red"></div>
+            <p class="card-title">Team Builder</p>
+            <p class="descript">Scans our talent network to create the optimal team for your project</p>
+            <img src="img/4cards/icon-team-builder.jpg" alt="house overlayed on website page" class="card-icon">
+          </div>
+          <div class="card4">
+            <div class="color-line" id="orange"></div>
+            <p class="card-title">Karma</p>
+            <p class="descript">Regularly evaluates our talent to ensure quality</p>
+            <img src="img/4cards/icon-karma.jpg" alt="light bulb" class="card-icon">
+          </div>
+        </div>
+        <div class="card4">
+          <div class="color-line" id="blue"></div>
+          <p class="card-title">Calculator</p>
+          <p class="descript">Uses data from past projects to provide better delivery estimates</p>
+          <img src="img/4cards/icon-calculator.jpg" alt="desktop with graph outlines" class="card-icon">
+        </div>
+      </div>
+    </section>
+    <section class="FAQ-card">
+      <img class="FAQback" src="img/FAQ/FAQback.jpg" alt="purpleback">
+      <div class="card">
+        <div class="FAQ-title">
+          <img class="star" src="img/FAQ/icon-star.jpg" alt="star icon">
+          <h2>FAQs</h2>
+        </div>
+        <div class="QnA">
+          <div class="question">
+            <p>What is Frontend Mentor, and how will it help me?</p>
+            <img id="0" class="plus" src="img/FAQ/icon-plus.jpg" alt="plus symbol">
+            <img id="0" src="img/FAQ/icon-minus.jpg" alt="minus symbol" class="minus">
+          </div>
+          <p id="0" class="answer">Frontend Mentor offers realistic coding challenges to help developers improve their
+            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building. </p>
+        </div>
+        <div class="QnA">
+          <div class="question">
+            <p>Is Frontend Mentor free?</p>
+            <img id="1" class="plus" src="img/FAQ/icon-plus.jpg" alt="plus symbol">
+            <img id="1" src="img/FAQ/icon-minus.jpg" alt="minus symbol" class="minus">
+          </div>
+          <p id="1" class="answer">Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+            option providing access to a range of projects suitable for all skill levels. </p>
+        </div>
+        <div class="QnA">
+          <div class="question">
+            <p>Can I use Frontend Mentor projects in my portfolio?</p>
+            <img id="2" class="plus" src="img/FAQ/icon-plus.jpg" alt="plus symbol">
+            <img id="2" src="img/FAQ/icon-minus.jpg" alt="minus symbol" class="minus">
+          </div>
+          <p id="2" class="answer">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an
+            excellent way to showcase your skills to potential employers!</p>
+        </div>
+        <div class="QnA">
+          <div class="question">
+            <p>How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
+            <img id="3" class="plus" src="img/FAQ/icon-plus.jpg" alt="plus symbol">
+            <img id="3" src="img/FAQ/icon-minus.jpg" alt="minus symbol" class="minus">
+          </div>
+          <p id="3" class="answer">The best place to get help is inside Frontend Mentor's Discord community. There's a
+            help channel where you can ask questions and seek support from other community members.</p>
+        </div>
+      </div>
+    </section>
+    <section class="form-area" style="background-image: url('img/backgroundform.png');">
+      <div class="form-descript">
+        <p class="learn">Learn to code by watching others</p>
+        <p class="form-blurb">See how experienced developers solve problems in real-time. Watching scripted tutorials is
+          great, but understanding how developers think is invaluable.</p>
+      </div>
+      <div class="form-column">
+        <div class="try">
+          <p class="tryit"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
+        </div>
+        <form class="form">
+          <input type="text" class="form-line" id="first" placeholder="First Name" required>
+          <input type="text" class="form-line" id="last" placeholder="Last Name" required>
+          <input type="email" class="form-line" id="email" placeholder="Email Address" required>
+          <input type="text" class="form-line" id="password" placeholder="Password" required>
+          <button class="claim">CLAIM YOUR FREE TRIAL</button>
+          <p class="disclaim">By clicking this button, you are agreeing to our <a href="#" class="red">Terms and
+              Services</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <ul>
+        <li><i class="fa-solid fa-location-dot"></i> 284 Cumberland Ave, Portland ME 04101</li>
+        <li><i class="fa-solid fa-envelope"></i> <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=hemonc@portlandschools.org" target="_blank">
+            hemonc@portlandschools.org</a></li>
+        <li><i class="fa-solid fa-phone"></i> 207.232.6359</li>
+        <li class="icons"><a href="https://github.com/cadeh12" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        </li>
+        <li>Caden Hemond <i class="fa-regular fa-copyright"></i> 2023</li>
+      </ul>
+    </div>
+  </footer>
+  <script src="js/FAQaccordion.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>
