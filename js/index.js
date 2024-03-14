@@ -18,13 +18,9 @@ function toggleMenu() {
     }
 }
 
-https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={9f9b4e7d7ecee25c8e5c3529ea6d8b76}
-
-
-
-
 hamburger.addEventListener("click", toggleMenu)
 
+// Joke Generator
 const url = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
 const options = {
   method: 'GET',
@@ -33,8 +29,6 @@ const options = {
     'X-RapidAPI-Host': 'dad-jokes-by-api-ninjas.p.rapidapi.com'
   }
 };
-
-
 
 async function getJoke() {
   try {
@@ -49,3 +43,36 @@ async function getJoke() {
 }
 
 jokeBtn.addEventListener("click", getJoke)
+
+// Weather Widget
+const weatherCity = document.querySelector(".weather-city")
+const weatherDate = document.querySelector(".weather-date")
+const weatherTime = document.querySelector(".weather-time")
+const conditionIcon = document.querySelector(".con-img")
+const currentCondition = document.querySelector(".condition")
+
+// Date and Time
+const dateObject = new Date();
+const month = dateObject.getMonth() + 1
+const day = dateObject.getDate()
+const year = dateObject.getFullYear()
+weatherDate.textContent = month + "/" + day + "/" + year
+const hours = dateObject.getHours()
+let minutes = dateObject.getMinutes()
+if (minutes < 10) {
+  minutes = "0" + dateObject.getMinutes()
+}
+let meridian = "AM"
+if (hours > 12) {
+  hours = dateObject.getHours() - 12
+}
+if (hours >= 12) {
+  meridian = "PM"
+}
+let time = `${hours}:${minutes} ${meridian}`
+weatherTime.textContent = time
+
+
+weatherCity.textContent = "PORTLAND, ME"
+conditionIcon.src = "img/weather/sunny.png"
+currentCondition.textContent = "Sunny"
