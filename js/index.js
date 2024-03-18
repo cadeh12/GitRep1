@@ -20,8 +20,8 @@ function toggleMenu() {
 
 hamburger.addEventListener("click", toggleMenu)
 
-// Joke Generator
-const url = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
+// Dad Joke Generator
+const dadurl = 'https://dad-jokes-by-api-ninjas.p.rapidapi.com/v1/dadjokes';
 const options = {
   method: 'GET',
   headers: {
@@ -32,7 +32,7 @@ const options = {
 
 async function getJoke() {
   try {
-    const response = await fetch(url, options);
+    const response = await fetch(dadurl, options);
     const result = await response.json();
     const joke = result[0].joke;
     console.log(result[0].joke);
@@ -50,7 +50,9 @@ const weatherDate = document.querySelector(".weather-date")
 const weatherTime = document.querySelector(".weather-time")
 const conditionIcon = document.querySelector(".con-img")
 const currentCondition = document.querySelector(".condition")
+const currentTemp = document.querySelector(".current-temp")
 
+weatherCity.textContent = "PORTLAND, ME"
 // Date and Time
 const dateObject = new Date();
 const month = dateObject.getMonth() + 1
@@ -71,8 +73,42 @@ if (hours >= 12) {
 }
 let time = `${hours}:${minutes} ${meridian}`
 weatherTime.textContent = time
+// Update Copyright year
+const currentYear = document.querySelector(".current-year")
+currentYear.textContent = year
 
+// Weather API
+const clouds = ['few clouds', 'scattered clouds', 'broken clouds', 'overcast clouds']
+const rain = ['shower rain', 'rain', 'mist']
+let lat = 43.6591
+let lon = -70.2568
+const key = "9f9b4e7d7ecee25c8e5c3529ea6d8b76"
+let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${key}&units=imperial`
+let img
 
-weatherCity.textContent = "PORTLAND, ME"
-conditionIcon.src = "img/weather/sunny.png"
-currentCondition.textContent = "Sunny"
+async function getWeather() {
+  try {
+    const response = await fetch(url)
+    const data = await response.json()
+    // console.log(data.weather[0].main)
+    currentTemp.textContent = Math.round(data.main.temp)
+    let condition = data.weather[0].description
+    currentCondition.textContent = condition
+    if (clouds.includes(condition)) {
+      img = 'partly-cloudy.png'
+    } else if (rain.includes(condition)) {
+      img = 'rain.png'
+    } else if (condition == 'thunderstorm') {
+      img = 'rain-storm.png'
+    } else if (condition == 'snow') {
+      img = 'snow.png'
+    } else {
+      img = 'sunny.png'
+    }
+    conditionIcon.src = `img/weather/${img}`
+  } catch (error) {
+    console.error(error)
+  }
+}
+
+getWeather()
